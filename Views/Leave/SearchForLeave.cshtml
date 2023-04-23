@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "SearchForLeave";
+}
+
+<h4>Search for an employee's leave</h4>
+<hr />
+<div class="text-center">
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowLeaves">
+            <div class="form-group">
+                <label for="LeaveSearchFirstName" class="control-label">First name</label>
+                <input name="LeaveSearchFirstName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="LeaveSearchLastName" class="control-label">Last name</label>
+                <input name="LeaveSearchLastName" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<br />
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
